@@ -95,7 +95,7 @@ app.get(
   "/campgrounds/:id/edit",
   catchAsync(async (req, res) => {
     const campground = await Campground.findById(req.params.id);
-    res.render("campground/edit", { campground });
+    res.render("campground/edit", { campground }); //edit form mein data show nathi thy.
   })
 );
 
